@@ -24,7 +24,7 @@
 
 body {
     background-color: var(--bg);
-    width: 100%;
+    width: auto;
 }
 
 header {
@@ -40,7 +40,7 @@ header {
 .header-content {
     display: flex;
     justify-content: space-around;
-   
+    width: auto;
 }
 
 .logo {
@@ -187,9 +187,17 @@ nav ul li a {
     display: none;
 }
 
-@media(min-width:412px)and (max-width:991px) {
+@media(min-width:360px)and (max-width:991px) {
 
-
+    header {
+        background-image: var(--imagbg);
+        background-repeat: no-repeat;
+        height: 60vh;
+        width: auto;
+        background-size: cover;
+        color: var(--textcolor);
+    
+    }
 
     #header-text {
         margin: 150px 0 0 20px;
@@ -223,7 +231,7 @@ nav ul li a {
 
     .list {
         display: block;
-
+        width: auto;
 
     }
 
@@ -337,7 +345,13 @@ margin-top: 50px;
 }
 .flag{
     display: flex;
+    width: auto;
 }
+
+.flag img{
+    width: auto;
+}
+
 .flag-text{
     color: var(--textcolor);
     margin: 40px;
@@ -385,7 +399,7 @@ font-size: 3rem;
    
 }
 .product img{
-    width: 400px;
+    width: auto;
     height: 400px;
     margin: 20px;
 }
@@ -415,6 +429,7 @@ margin: 70px 0;
 }
 .seaman img{
     margin-left: 70px;
+    width: auto;
 
 }
 
@@ -422,11 +437,12 @@ margin: 70px 0;
 #customers{
     margin: 100px 0 0 0px;
     background-color: white;
-    width: 100%;
+    width: auto;
 }
 .customers{
    display: flex;
    background-color: #feeefe;
+   width: auto;
 }
 .pro1{
     display: flex;
@@ -486,25 +502,51 @@ footer{
 
 
 
-@media(min-width:412px)and (max-width:800px) {
+@media(min-width:360px)and (max-width:800px) {
     .flag{
         display: block;
         
     }
     .flag img{
-        width: 480px;
+        width: 90%;
     }
     .flag-text{
         margin: 0px 0px 0px 20px ;
+       
+    }
+    .flag-text h2{
+        font-size: 1.9rem;
+    }
+    .flag-text p{
+        font-size: 1.9rem;
+        margin-right: 10px;
     }
     
 
 /* girl sections */
     .girl{
 display: block;
+margin: 0;
+
+    }
+    #camera{
+        position: relative;
     }
     .girl img{
-        width: 100%;
+        width: 80%;
+     position: relative;
+     left: 0;
+    
+    }
+    .girl-text h2{
+      position: absolute;
+      font-size: 1.9rem;
+    }
+    .girl-text p{
+        font-size: 1.9rem;
+        margin: 90px 0;
+        position: absolute;
+        left: 0%;
     }
 
 /* section product */
@@ -513,6 +555,7 @@ display: block;
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin: 300px 0;
 }
 
 .product img{
@@ -530,19 +573,30 @@ display: block;
     margin: 0;
     width: 100%;
 }
+.sea-text h2{
+    font-size: 1.9rem;
+}
+.sea-text p{
+    font-size: 1.9rem;
+    width: auto;
+}
 #customers{
     background: rgb(65, 9, 9);
    
 }
 .customers{
     display: block;
-    margin-top: 50px;
-   
-    
+    margin-top: 50px;   
+}
+
+.customer-text h2{
+font-size: 1.9rem;
+}
+.customer-text p{
+    font-size: 1.9rem;
 }
 .p{
-width: 400px;
-margin-left: 50px;
+width: auto;
 animation: cr 4s ease-out;
 }
 
