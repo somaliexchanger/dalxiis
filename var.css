@@ -43,11 +43,11 @@ header {
     width: auto;
 }
 
-.logo {
+/* .logo {
     position: absolute;
     left: 5%;
     top: 8%;
-    font-family: var(--fonth1h2);
+    font-family: var(--fonth1h2); */
 }
 
 span {
